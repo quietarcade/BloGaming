@@ -1,0 +1,220 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+*{
+  margin: 0 auto;
+  color: #989898;
+}
+body {
+  background-color: #A1C3D1;
+  background-image: url("bg.jpeg");
+  color: #333;
+}
+body, p, ol, ul, td {
+  font-family: lato, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  color: #a79f9f;
+}
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+p{
+  padding: 10px;
+}
+a{
+  text-decoration:none;
+}
+
+.notice { color: green; }
+.alert  { color: red; }
+#header, #main, #footer {
+  width: 800px;
+}
+#header {
+  font-family:lato, sans-serif;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #78244C;
+  color:#333333;
+  padding: 15px 0;
+  height: 35px;
+}
+#header #user_bar {
+  float: right;
+  font-size: 10px;
+}
+#footer {
+  border-top: 2px solid #78244C;
+  margin-top: 10px;
+  clear:both;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 11px;
+}
+#header h1 {
+  padding-top: 14px;
+  float: left;
+  font-size: 40px;
+}
+#header h1 a{
+  color: #F0EBF4;
+}
+#header h1 a:hover {
+  text-decoration:none;
+}
+#header p {
+  float: right;
+}
+#main h1 {
+  font-size: 20px;
+  color: #F0EBF4;
+  padding: 10px 0;
+  border-bottom: 2px solid #78244C;
+  margin-bottom: 10px;
+}
+#main table{
+  margin: 0;
+}
+#main form{
+  text-align: left;
+}
+
+#main form br{
+  display: none;
+  float: left;
+}
+#main form label {
+  width: auto;
+  display: block;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  line-height: 21px;
+  background-color: #dbdbdb;
+  border: 2px solid #ccc;
+  margin-right: 10px;
+  color: #78244C;
+}
+}
+#main form label.check_box_label {
+  width: auto;
+  display: inline;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 21px;
+  vertical-align: center;
+  background-color: #FFF;
+  border: none;
+}
+#main form .field, #main form .actions {
+  padding-top: 10px;
+  clear: both;
+}
+#main form input[type=text], #main form input[type=password], #main form textarea {
+  float: left;
+  font-size: 14px;
+  width: 250px;
+  padding: 2px;
+  border: 2px solid #ccc;
+  background-color: #FFF;
+}
+#main form input[type=checkbox] {
+  margin: 4px;
+  float: left;
+}
+#main form textarea {
+  height: 150px;
+  background-color: #FFF;
+}
+#main form input[type=submit] {
+  margin-left: 150px;
+  float:center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#main form input[value=Search] {
+  margin-left: 10px;
+  float: right;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  height:24px;
+}
+#main form input[name=search] {
+  float: right;
+  font-size: 14px;
+  width: 250px;
+  padding: 2px;
+  border: 2px solid #ccc;
+  background-color: #FFF;
+}
+#main h3 {
+  padding-top: 10px;
+  height: 20px;
+  color: #FFFFFF;
+}
+#main h3 .actions{
+  display:none;
+  font-weight: normal;
+  font-size: 10px;
+  text-decoration: underline;
+}
+#main h3:hover .actions{
+  display: inline;
+}
+.field_with_errors {
+  display:table;
+  float:left;
+  margin:0;
+  width:100px;
+  margin-right: 10px;
+}
+#main form .field_with_errors label{
+  border: 2px solid red;
+  margin-right: 0px;
+}
+#main form .field_with_errors input, #main form .field_with_errors  textarea{
+  width: 250px;
+  border: 2px solid red;
+}
+#error_explanation {
+  width: 413px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+  margin: 0;
+}
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
